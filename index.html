@@ -12,23 +12,27 @@
     </head>
     <body>
         <!--Barra de navegação-->
-        <nav>
-            <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
                 <!--Logo da página-->
-                <a href="#">Loja de Sapato</a>
+                <a class="navbar-brand" href="#">Loja de Sapato</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
 
-                        <li>
-                            <a href="#">Sobre</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
                         </li>
 
-                        <li>
-                            <a href="#">Contato</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -75,12 +79,65 @@
             </section>
             <!--Formulario de contato-->
             <section>
+                <h2>Formulário</h2>
+                <form action="none">
+                    <div>
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Seu nome">
+                    </div>
 
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="name" placeholder="Seu E-mail">
+                    </div>
+
+                    <div>
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" placeholder="Assunto">
+
+                        <div>
+                            <label for="message">Mensagem</label>
+                            <textarea type="text" id="message" rows="3" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
             </section>
         </main>
 
         <footer>
+            <div>
+                <div>
+                    <div>
+                        <h5><a href="#">Loja de Sapato</a></h5>
+                        <p>
+                            A sua loja online de sapatos com as melhores ofertas e qualidades
+                        </p>
+                    </div>
 
+                    <div>
+                        <h5>Links uteis</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5>Siga-nos</h5>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                &copy; 2024 Loja de sapatos. Todos os direitos reservados.
+            </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
